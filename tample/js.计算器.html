@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <style type="text/css">
+        #showdiv{
+            border: solid 1px;
+            width: 300px;
+            height: 500px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: floralwhite;
+        }
+        input[type=text]{
+            margin-top: 10px;
+            width: 290px;
+            height: 40px;
+            font-size: 25px;
+        }
+        input[type=button]{
+            width: 60px;
+            height: 60px;
+            margin-top: 40px;
+            margin-left: 2px;
+            margin-right: 5px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript" charset="UTF-8">
+             function test(btn){
+                 var num= btn.value;
+                 switch (num){
+                     case "=":
+                         document.getElementById("inp").value = eval(document.getElementById("inp").value);
+                         break;
+                     case "c":
+                         document.getElementById("inp").value ="";
+                         break;
+                     default:
+                         //将按钮的值赋给input输入框
+                         document.getElementById("inp").value = document.getElementById("inp").value+num;
+                         break;
+                 }
+             }
+
+
+    </script>
+</head>
+<body>
+      <div id="showdiv">
+          <input type="text" id="inp" name="" value=""><br/>
+          <input type="button" id="btn" name="" value="1" onclick="test(this)"/>
+          <input type="button" id="" name="" value="2" onclick="test(this)">
+          <input type="button" id="" name="" value="3" onclick="test(this)">
+          <input type="button" id="" name="" value="4" onclick="test(this)"><br/>
+          <input type="button" id="" name="" value="5" onclick="test(this)">
+          <input type="button" id="" name="" value="6" onclick="test(this)">
+          <input type="button" id="" name="" value="7" onclick="test(this)">
+          <input type="button" id="" name="" value="8" onclick="test(this)"><br/>
+          <input type="button" id="" name="" value="9" onclick="test(this)">
+          <input type="button" id="" name="" value="+" onclick="test(this)">
+          <input type="button" id="" name="" value="-" onclick="test(this)">
+          <input type="button" id="" name="" value="*" onclick="test(this)"><br/>
+          <input type="button" id="" name="" value="0" onclick="test(this)">
+          <input type="button" id="" name="" value="/" onclick="test(this)">
+          <input type="button" id="" name="" value="c" onclick="test(this)">
+          <input type="button" id="" name="" value="=" onclick="test(this)">
+
+
+      </div>
+
+</body>
+</html>

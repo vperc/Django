@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙案例</title>
+    <style type="text/css">
+        /*设置body样式*/
+        body{
+            text-align: center;
+            background-color: gray;
+        }
+        img{
+            width: 12%;/*设置高度*/
+            padding: 10px;/*设置内边距*/
+            border: solid 1px;
+            background-color: white;
+            transform: rotate(-10deg);/*设置倾斜角度*/
+            margin:20px;/*设置外边距*/
+        }
+        /*使用伪类给标签添加样式*/
+        img:hover{
+            transform: rotate(0deg) scale(1.5);/*设置旋转角度和缩放比例*/
+            z-index: 1.5;/*设置显示优先级别*/
+            transition: 0.6s;/*设置显示时间*/
+        }
+    </style>
+</head>
+<body>
+        <br/><br/>
+        <img src="https://img0.baidu.com/it/u=4027294468,2844812981&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500" alt="">
+        <img src="https://img2.baidu.com/it/u=802124653,501079121&fm=253&fmt=auto&app=138&f=JPEG?w=755&h=500" alt="">
+        <img src="https://img1.baidu.com/it/u=3981676443,2753985330&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=313" alt=""><br/>
+        <img src="https://img2.baidu.com/it/u=2257140066,448815075&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" alt="">
+        <img src="https://img2.baidu.com/it/u=1509171177,3924556283&fm=253&fmt=auto&app=120&f=JPEG?w=1200&h=750" alt="">
+        <img src="https://img0.baidu.com/it/u=1396487106,4220963230&fm=253&fmt=auto&app=138&f=JPEG?w=360&h=360" alt="">
+
+</body>
+</html>

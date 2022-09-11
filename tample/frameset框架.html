@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+        <!--HTML5已经弃用 用div+iframe 代替frameset框架，frameset 已经过时, 使用frameset会带来很多问题,比如session丢失等. 所以提倡用iframe-->
+        <frameset rows="10%,*,10%">
+            <frame src="frameset/top.html"/>
+            <frameset cols="10%,*">
+                 <frame src="frameset/left.html"/>
+                <frame src="frameset/right.html"/>
+            </frameset>
+            <frame src="frameset/buttom.html">
+        </frameset>
+</html>

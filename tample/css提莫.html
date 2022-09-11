@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style type="text/css">
+        /*添加网页背景图*/
+        body{
+            background-image:url("https://img1.baidu.com/it/u=4152798366,1553329666&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500");/*添加背景图片*/
+            background-repeat: no-repeat;/*设置图片不重复*/
+            {#background-size: cover;/*设置图片平铺*/#}
+        }
+        hr{
+            width: 50%;
+            size: 20px;
+            color: darkcyan;
+            background-color: bisque;
+        }
+        table{
+            width: 300px;
+            height: 200px;
+            border: solid 1px;
+            background-color: #f2cdb0;
+            color: darkcyan;
+            font-size: 10px;
+            font-weight: bold;
+            background-image: url("https://img1.baidu.com/it/u=2630219120,3069226778&fm=253&fmt=auto&app=138&f=JPEG?w=818&h=500");
+            background-repeat: no-repeat;
+            background-size:cover;
+            float: left;
+            line-height: 10px;
+        }
+        tr{
+            height: 40px;
+        }
+        td{
+            width: 100px;/*设置宽*/
+            border: solid 1px red;/*添加边框及其颜色大小*/
+            border-radius: 200px;/*设置表框的角度*/
+            background-color: orange;/*设置背景颜色*/
+            text-align: center;/*设置文本位置*/
+            color: blueviolet;/*设置文本颜色*/
+            font-weight: bold;/*设置文本加粗*/
+            letter-spacing: 10px;/*设置字体间距*/
+        }
+        li{
+            list-style-type: none;/*去除li的标识符*/
+            float: left;/*设置菜单左悬浮*/
+        }
+        li a{
+            color: black;
+            text-decoration: underline;/*设置超链接去除下划线*/
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 20px;
+            position: relative;
+            top: 10px;
+        }
+        /*id选择器*/
+        #t1{
+           background-color: gray;
+        }
+        b{
+            color: red;
+        }
+        /*类选择器*/
+        .common{
+           color: aquamarine;
+        }
+        ur li a{
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="my.css">
+</head>
+<body>
+       <h3 id="t1">css的选择器</h3>
+       <hr style="background-color: azure" height="50px"/>
+       <hr />
+       <table class="common">
+           <tr>
+               <td>姓名</td>
+               <td>性别</td>
+               <td>爱好</td>
+           </tr>
+           <tr>
+               <td>张三</td>
+               <td>男</td>
+               <td>唱歌</td>
+           </tr>
+           <tr>
+               <td>李四</td>
+               <td>男</td>
+               <td>跳舞</td>
+           </tr>
+       </table>
+       <table>
+           <tr>
+               <td></td>
+               <td></td>
+           </tr>
+           <tr>
+               <td></td>
+               <td></td>
+           </tr>
+           <tr>
+               <td></td>
+               <td></td>
+           </tr>
+       </table>
+       <b class="common">css学习</b>
+       <hr/>
+       <ur>
+           <li><a href="">呵呵</a></li>
+           <li><a href="">哈哈</a></li>
+           <li><a href="">嘿嘿</a></li>
+           <li><a href="">嘻嘻</a></li>
+       </ur>
+</body>
+</html>

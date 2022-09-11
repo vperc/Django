@@ -1,0 +1,47 @@
+
+*{
+    margin: 5px;
+    padding: 0;
+}
+.menu{
+    position: relative;
+}
+.menu ul li {
+    float: left;
+    list-style: none;
+    font-size: 14px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: underline;
+    background: #f2cdb0;
+    color: #F00;
+}
+#a{
+    background-color: darkseagreen;
+}
+#b{
+    background-color: darkseagreen;
+}
+#c{
+    background-color: darkseagreen;
+}
+#d{
+    background-color: darkseagreen;
+}
+#e{
+    background-color: darkseagreen;
+}
+#f{
+    background-color: darkseagreen;
+}
+#g{
+    background-color: darkseagreen;
+}
+#h{
+    background-color: darkseagreen;
+}
+
+

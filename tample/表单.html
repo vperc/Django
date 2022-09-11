@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这是一个表单</title>
+</head>
+<body>
+     <form>
+         <fieldset>
+             <legend align="center">个人资料</legend>
+              <p>姓名：<input type="text" name="username"></p>
+              <p>性别:
+                 <input name="xb" type="radio" checked value="男">男
+                 <input name="xb" type="radio" value="女">女
+                 <p>出生日期:
+                    <input  type="text" name="birthday">
+                    <p>主要经历:
+                         <textarea name="textarea" rows="3" cols="25"></textarea>
+                    <p>兴趣爱好:
+                         <input type="checkbox" name="ah" value="01">唱歌
+                         <input type="checkbox" name="ah" value="02">羽毛球
+                         <input type="checkbox" name="ah" value="03">下棋
+                         <input type="checkbox" name="ah" value="04">网上冲浪
+                         <input type="checkbox" name="ah" value="05">网购
+                 </p>
+         </fieldset>
+      <fieldset>
+          <legend align="center">专业与课程</legend>
+          所学专业:
+          <select name="select">
+                 <option>大数据与技术</option>
+                 <option selected>计算机应用</option>
+              <option>计算机网络与技术</option></select>
+           所学课程:
+              <select name="select2" size="4">
+                     <option>计算机应用基础</option>
+                     <option >office</option>
+                     <option>计算机网络与技术</option>
+                      <option>数据库应用基础</option>
+                      <option>c语言</option>
+                      <option>网页设计</option>
+              </select>
+      </fieldset>
+         <p><input type="submit" value="提交"></p>
+            <input type="reset" value="重填">
+     </form>
+
+</body>
+</html>

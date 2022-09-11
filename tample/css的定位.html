@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css的定位</title>
+    <style type="text/css">
+        #div01{
+            border: solid 2px orange;
+            width: 800px;
+            height: 200px;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            position: relative;
+        }
+        #showdiv{
+            border: solid 3px;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 10px;
+        }
+        #div02{
+            border: dashed 2px coral;
+            width: 800px;
+            height: 200px;
+            margin-bottom: 10px;
+            position: relative;/*使用相对定位,position 相对定位:参照他自己 绝对定位:参照body 固定定位:固定到屏幕*/
+            left: 50px;
+            top: 100px;
+            background-color: coral;
+            z-index: 3;
+        }
+        #div03{
+            border: solid 2px #FF7F50;
+            width: 800px;
+            height: 200px;
+            margin-bottom: 10px;
+            background-color: gray;
+            position: relative;
+            z-index: 4;
+        }
+        #div04{
+            border: solid 3px white;
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            top: 300px;
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+      <div id="div01">
+          <div id="showdiv"></div>
+
+      </div>
+        <div id="div02">我是div02</div>
+        <div id="div03">我是div03</div>
+        <div id="div04"><img src="https://img2.baidu.com/it/u=190775548,1262395179&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=478" height="50px" width="50px"></div>
+     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>
